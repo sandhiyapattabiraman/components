@@ -9,10 +9,10 @@ const variantStyle = {
 }
 
 
-function Button({variant, text, className}) {
+function Button({variant, text, className , onClick}) {
     return(
             <div>
-                <button className={`${variantStyle[variant]} ${className}`}>
+                <button className={`${variantStyle[variant]} ${className}`} onClick={onClick}>
                     {text}
                 </button>
             </div>
