@@ -9,10 +9,10 @@ const variantStyle = {
 }
 
 
-function Button({variant, text}) {
+function Button({variant, text, className}) {
     return(
             <div>
-                <button className={variantStyle[variant]}>
+                <button className={`${variantStyle[variant]} ${className}`}>
                     {text}
                 </button>
             </div>
